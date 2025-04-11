@@ -2,7 +2,7 @@
 
 ## Integrantes do grupo
 - Bruno Gaspar
-- Maroco antonio  
+- Marco Antonio  
 
 ## Objetivo
 Desenvolver colaborativamente um algoritmo em Portugol de uma calculadora de soma e subtração
@@ -14,7 +14,7 @@ Desenvolver colaborativamente um algoritmo em Portugol de uma calculadora de som
 - Foi até o site e baixou o arquivo .por 
 - Fez a chave ssh e conectou a conta ao computador e clonou o repositorio
 
-### Marco antonio
+### Marco Antonio
 - Fez a chave ssh e conectou a conta ao computador e clonou o repositorio
 
 ### Bruno Gaspar 
@@ -22,3 +22,11 @@ Desenvolver colaborativamente um algoritmo em Portugol de uma calculadora de som
 - fez alterações no readme
 - fez o commit 
 - fez deu o comando git add e deu push
+
+### Marco Antonio
+- Ultilizei o gitpull na Main
+- Programei o código de soma
+- Fiz a alteração do arquivo .por
+- Fiz a atualização no Read.me
+- Dei commit nas atualizações
+- Dei gitadd e gitpush
