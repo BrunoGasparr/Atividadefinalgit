@@ -20,13 +20,24 @@ Desenvolver colaborativamente um algoritmo em Portugol de uma calculadora de som
 ### Bruno Gaspar 
 - Adicionou aquivo .por
 - fez alterações no readme
+- deu git add
 - fez o commit 
-- fez deu o comando git add e deu push
+- comando git push
 
 ### Marco Antonio
 - Ultilizei o gitpull na Main
-- Programei o código de soma
+- Programei o código da calculadora de soma
 - Fiz a alteração do arquivo .por
 - Fiz a atualização no Read.me
+- dei git add 
 - Dei commit nas atualizações
-- Dei gitadd e gitpush
+- Dei git push
+
+### Bruno Gaspar
+- Dei git pull na main
+- Programei o código da calculadora de subtração
+- Fiz a alteração do arquivo .por fazendo com que você possa escolher se quer somar ou subtrair
+- Fiz a atualização do readme
+- dei git add
+- dei commit nas atualizações
+- dei git push 
