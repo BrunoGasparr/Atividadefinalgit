@@ -370,8 +370,155 @@ To github.com:BrunoGasparr/Atividadefinalgit.git
 compuni@Lab6m53 MINGW64 ~/Atividadefinalgit (main)
 
 ### Marco Antonio
+marco@marco MINGW64 ~
+$ git config --global user.name
+Marco
 
+marco@marco MINGW64 ~
+$ ^[[200~ls -al ~/.ssh~
+bash: $'\E[200~ls': command not found
 
+marco@marco MINGW64 ~
+$ ls -al ~/.ssh
+total 37
+drwxr-xr-x 1 marco 197609    0 Mar 28 19:58 ./
+drwxr-xr-x 1 marco 197609    0 Apr  9 21:43 ../
+-rw-r--r-- 1 marco 197609 3389 Mar 28 19:50 id_rsa
+-rw-r--r-- 1 marco 197609  750 Mar 28 19:50 id_rsa.pub
+-rw-r--r-- 1 marco 197609  828 Mar 28 19:58 known_hosts
+-rw-r--r-- 1 marco 197609   92 Mar 28 19:58 known_hosts.old
 
+marco@marco MINGW64 ~
+$ rm -f ~/.ssh/id_rsa*
 
+marco@marco MINGW64 ~
+$ rm -f ~/.ssh/id_rsa*
 
+marco@marco MINGW64 ~
+$ ls -al ~/.ssh
+total 29
+drwxr-xr-x 1 marco 197609   0 Apr 11 19:18 ./
+drwxr-xr-x 1 marco 197609   0 Apr  9 21:43 ../
+-rw-r--r-- 1 marco 197609 828 Mar 28 19:58 known_hosts
+-rw-r--r-- 1 marco 197609  92 Mar 28 19:58 known_hosts.old
+
+marco@marco MINGW64 ~
+$ ls -al ~/.ssh
+total 29
+drwxr-xr-x 1 marco 197609   0 Apr 11 19:18 ./
+drwxr-xr-x 1 marco 197609   0 Apr  9 21:43 ../
+-rw-r--r-- 1 marco 197609 828 Mar 28 19:58 known_hosts
+-rw-r--r-- 1 marco 197609  92 Mar 28 19:58 known_hosts.old
+
+marco@marco MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C marcoakawakami@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/marco/.ssh/id_rsa):
+Enter passphrase for "/c/Users/marco/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/marco/.ssh/id_rsa
+Your public key has been saved in /c/Users/marco/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:bulmUIQoDBxAeJGixOH72AIzsVBzzsksiKy9x7UWH+0 marcoakawakami@gmail.com
+The key's randomart image is:
+
+marco@marco MINGW64 ~
+$ ls -al ~/.ssh
+total 37
+drwxr-xr-x 1 marco 197609    0 Apr 11 19:20 ./
+drwxr-xr-x 1 marco 197609    0 Apr  9 21:43 ../
+-rw-r--r-- 1 marco 197609 3389 Apr 11 19:20 id_rsa
+-rw-r--r-- 1 marco 197609  750 Apr 11 19:20 id_rsa.pub
+-rw-r--r-- 1 marco 197609  828 Mar 28 19:58 known_hosts
+-rw-r--r-- 1 marco 197609   92 Mar 28 19:58 known_hosts.old
+
+marco@marco MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 737
+
+marco@marco MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/marco/.ssh/id_rsa (marcoakawakami@gmail.com)
+
+marco@marco MINGW64 ~
+$ clip < ~/.ssh/id_rsa.pub
+
+marco@marco MINGW64 ~
+$ ssh -T git@github.com
+Hi odeioluvadepedreiro! You've successfully authenticated, but GitHub does not provide shell access.
+
+marco@marco MINGW64 ~
+$ $ git clone git@github.com:BrunoGasparr/Atividadefinalgit.git
+bash: $: command not found
+
+marco@marco MINGW64 ~
+$ git clone git@github.com:BrunoGasparr/Atividadefinalgit.git
+Cloning into 'Atividadefinalgit'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+marco@marco MINGW64 ~
+$ dir
+Ambiente\ de\ Impressão  Cookies                 IdeaProjects      NTUSER.DAT                                                                                    Recent        chave
+Ambiente\ de\ Rede       Dados\ de\ Aplicativos  Links             NTUSER.DAT{6c6f7319-f3b3-11ef-9e6d-bff4e66330a2}.TM.blf                                       Saved\ Games  chave.pub
+AppData                  Desktop                 Menu\ Iniciar     NTUSER.DAT{6c6f7319-f3b3-11ef-9e6d-bff4e66330a2}.TMContainer00000000000000000001.regtrans-ms  Searches      ntuser.dat.LOG1
+Atividadefinalgit        Documents               Meus\ Documentos  NTUSER.DAT{6c6f7319-f3b3-11ef-9e6d-bff4e66330a2}.TMContainer00000000000000000002.regtrans-ms  SendTo        ntuser.dat.LOG2
+Configurações\ Locais    Downloads               Modelos           OneDrive                                                                                      Videos        ntuser.ini
+Contacts                 Favorites               Music             Pictures                                                                                      ansel
+
+marco@marco MINGW64 ~
+$ cd Atividadefinalgit
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 682 bytes | 170.00 KiB/s, done.
+From github.com:BrunoGasparr/Atividadefinalgit
+ * branch            main       -> FETCH_HEAD
+   ad6e060..7cf6721  main       -> origin/main
+Updating ad6e060..7cf6721
+Fast-forward
+ README.md     | 25 ++++++++++++++++++++++++-
+ atividade.por |  5 +++++
+ 2 files changed, 29 insertions(+), 1 deletion(-)
+ create mode 100644 atividade.por
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git pull origin main
+From github.com:BrunoGasparr/Atividadefinalgit
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ gitadd .
+bash: gitadd: command not found
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git add .
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git commit -m "Adicionado calculadora de soma no .por"
+[main a506259] Adicionado calculadora de soma no .por
+ 2 files changed, 25 insertions(+), 5 deletions(-)
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 700 bytes | 700.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:BrunoGasparr/Atividadefinalgit.git
+   7cf6721..a506259  main -> main
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
+$ git pull origin main^C
+
+marco@marco MINGW64 ~/Atividadefinalgit (main)
